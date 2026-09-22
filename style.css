@@ -1,7 +1,10 @@
+*{
+   box-sizing: border-box;
+}
 body{
    color: rgb(230, 14, 198);
    background-color: #ffd4f4;
-   font-style: oblique;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 footer{
    color: blue;
@@ -13,4 +16,9 @@ header{
 }
 nav{
    background-color: #b1fcbd;
+}
+.container{
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 0 16px;
 }

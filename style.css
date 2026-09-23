@@ -7,15 +7,15 @@ body{
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 footer{
-   color: blue;
-   background-color: #b1fcbd;
+   color: rgb(14, 255, 90);
+   background-color: #9382f2;
 }
 header{ 
    color: #3ac64f;
-   background-color: #b1fcbd;
+   background-color: #3815fa;
 }
 nav{
-   background-color: #b1fcbd;
+   background-color: #9382f2;
 }
 .container{
    max-width: 900px;

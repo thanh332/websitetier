@@ -65,15 +65,15 @@ nav{
     margin: 15px;
     padding: 10px;
 
-    background: linear-gradient(90deg, #6a00ff, #d000b8, #ff4fc3);
+    background: linear-gradient(90deg, #0d011f, #720f65, #ff4fc3);
     border-radius: 18px;
 
-    box-shadow: 0 5px 18px rgba(150, 0, 150, 0.35);
+    box-shadow: 0 5px 18px rgba(157, 1, 157, 0.35);
 }
 
 /* MENÜPUNKTE */
 .kolibri-nav a {
-    color: white;
+    color: #white (251, 248, 248);
     text-decoration: none;
 
     font-family: Arial, sans-serif;

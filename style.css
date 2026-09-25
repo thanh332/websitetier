@@ -20,5 +20,127 @@ nav{
 .container{
    max-width: 900px;
    margin: 0 auto;
-   padding: 0 16px;
+   padding: 0 16px
+
 }
+
+/* KOLIBRI MENÜ */
+.kolibri-menu {
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+
+    margin: 15px auto;
+    width: 94%;
+    padding: 10px 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: linear-gradient(
+        90deg,
+        #531cff,
+        #b000ff,
+        #ff20b8,
+        #00cfff
+    );
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 8px 25px rgba(120, 0, 180, 0.35),
+        0 0 25px rgba(255, 0, 220, 0.25);
+
+    backdrop-filter: blur(10px);
+}
+
+/* Kolibri-Logo */
+.kolibri-menu .logo {
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+
+    padding: 10px 16px;
+    margin-right: auto;
+
+    letter-spacing: 2px;
+}
+
+/* Menü-Buttons */
+.kolibri-menu a {
+    position: relative;
+
+    color: white;
+    text-decoration: none;
+
+    font-weight: bold;
+    font-size: 15px;
+
+    padding: 10px 13px;
+    border-radius: 18px;
+
+    transition: 
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* Leuchtender Balken unter dem Menüpunkt */
+.kolibri-menu a::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+
+    width: 0;
+    height: 3px;
+
+    background: #fff;
+    border-radius: 10px;
+
+    transform: translateX(-50%);
+    transition: width 0.25s ease;
+}
+
+/* Hover */
+.kolibri-menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
+
+    transform:
+        translateY(-4px)
+        rotate(-1deg);
+
+    box-shadow:
+        0 5px 15px rgba(255,255,255,0.25);
+}
+
+.kolibri-menu a:hover::after {
+    width: 65%;
+}
+
+/* kleines "Flattern" beim Hover */
+.kolibri-menu a:hover {
+    animation: flattern 0.5s ease;
+}
+
+@keyframes flattern {
+    0%   { transform: translateY(0) rotate(0); }
+    30%  { transform: translateY(-5px) rotate(-2deg); }
+    60%  { transform: translateY(2px) rotate(2deg); }
+    100% { transform: translateY(-4px) rotate(-1deg); }
+}
+
+/* Für kleinere Bildschirme */
+@media (max-width: 850px) {
+    .kolibri-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .kolibri-menu .logo {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }

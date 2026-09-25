@@ -10,10 +10,13 @@ body {
 
 /* HEADER */
 header {
-    color: #3ac64f;
-    background-color: #3815fa;
+    color: #80ed90;
+    background-color: hwb(238 36% 4%);
 }
-
+footer{
+    color: blue;
+    background-color: #b797fa;
+}
 /* MENÜ */
 nav {
     width: 90%;

@@ -1,102 +1,76 @@
-*{
-   box-sizing: border-box;
-}
-body{
-   color: rgb(230, 14, 198);
-   background-color: #ffd4f4;
-   font-family:Arial, Helvetica, Gill Sans
-}
-footer{
-   color: rgb(14, 255, 90);
-   background-color: #9382f2;
-}
-header{ 
-   color: #3ac64f;
-   background-color: #3815fa;
-}
-nav{
-   background-color: #9382f2;
-}
-.container{
-   max-width: 900px;
-   margin: 0 auto;
-   padding: 0 16px
-
+* {
+    box-sizing: border-box;
 }
 
-/* KOLIBRI MENÜ */
-.kolibri-menu {
-    position: sticky;
-    top: 10px;
-    z-index: 1000;
+body {
+    color: rgb(230, 14, 198);
+    background-color: #ffd4f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+/* HEADER */
+header {
+    color: #3ac64f;
+    background-color: #3815fa;
+}
+
+/* MENÜ */
+nav {
+    width: 90%;
     margin: 15px auto;
-    width: 94%;
-    padding: 10px 14px;
+    padding: 8px;
 
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background: linear-gradient(
-        90deg,
-        #531cff,
-        #b000ff,
-        #ff20b8,
-        #00cfff
-    );
-
-    border-radius: 25px;
-
-    box-shadow:
-        0 8px 25px rgba(120, 0, 180, 0.35),
-        0 0 25px rgba(255, 0, 220, 0.25);
-
-    backdrop-filter: blur(10px);
-}
-
-/* KOLIBRI MENÜLEISTE */
-.kolibri-nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
 
-    margin: 15px;
-    padding: 10px;
+    background: linear-gradient(
+        90deg,
+        #5b18e8,
+        #c516c9,
+        #f05bc5
+    );
 
-    background: linear-gradient(90deg, #0d011f, #720f65, #ff4fc3);
-    border-radius: 18px;
+    border-radius: 15px;
 
-    box-shadow: 0 5px 18px rgba(157, 1, 157, 0.35);
+    box-shadow: 0 5px 18px rgba(80, 0, 120, 0.4);
 }
 
 /* MENÜPUNKTE */
-.kolibri-nav a {
-    color: #white (251, 248, 248);
+nav a {
+    color: white;
     text-decoration: none;
 
     font-family: Arial, sans-serif;
     font-size: 17px;
     font-weight: bold;
 
-    padding: 11px 17px;
-    border-radius: 14px;
+    padding: 10px 20px;
+
+    border-radius: 9px;
 
     transition: 0.3s;
 }
 
-/* HOVER-EFFEKT */
-.kolibri-nav a:hover {
-    background: rgba(255, 255, 255, 0.25);
+/* MOUSE-OVER */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
 
     transform: translateY(-3px);
 
-    box-shadow: 0 5px 12px rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
 }
 
-/* AKTUELLER MENÜPUNKT */
-.kolibri-nav a:active {
-    background: white;
-    color: #c000a8;
+/* FOOTER */
+footer {
+    color: rgb(14, 255, 90);
+    background-color: #9382f2;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
 }

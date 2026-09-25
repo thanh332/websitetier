@@ -55,92 +55,48 @@ nav{
     backdrop-filter: blur(10px);
 }
 
-/* Kolibri-Logo */
-.kolibri-menu .logo {
-    font-size: 19px;
-    font-weight: bold;
-    color: white;
+/* KOLIBRI MENÜLEISTE */
+.kolibri-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 
-    padding: 10px 16px;
-    margin-right: auto;
+    margin: 15px;
+    padding: 10px;
 
-    letter-spacing: 2px;
+    background: linear-gradient(90deg, #6a00ff, #d000b8, #ff4fc3);
+    border-radius: 18px;
+
+    box-shadow: 0 5px 18px rgba(150, 0, 150, 0.35);
 }
 
-/* Menü-Buttons */
-.kolibri-menu a {
-    position: relative;
-
+/* MENÜPUNKTE */
+.kolibri-nav a {
     color: white;
     text-decoration: none;
 
+    font-family: Arial, sans-serif;
+    font-size: 17px;
     font-weight: bold;
-    font-size: 15px;
 
-    padding: 10px 13px;
-    border-radius: 18px;
+    padding: 11px 17px;
+    border-radius: 14px;
 
-    transition: 
-        transform 0.25s ease,
-        background 0.25s ease,
-        box-shadow 0.25s ease;
+    transition: 0.3s;
 }
 
-/* Leuchtender Balken unter dem Menüpunkt */
-.kolibri-menu a::after {
-    content: "";
+/* HOVER-EFFEKT */
+.kolibri-nav a:hover {
+    background: rgba(255, 255, 255, 0.25);
 
-    position: absolute;
-    left: 50%;
-    bottom: 5px;
+    transform: translateY(-3px);
 
-    width: 0;
-    height: 3px;
-
-    background: #fff;
-    border-radius: 10px;
-
-    transform: translateX(-50%);
-    transition: width 0.25s ease;
+    box-shadow: 0 5px 12px rgba(255, 255, 255, 0.25);
 }
 
-/* Hover */
-.kolibri-menu a:hover {
-    background: rgba(255, 255, 255, 0.2);
-
-    transform:
-        translateY(-4px)
-        rotate(-1deg);
-
-    box-shadow:
-        0 5px 15px rgba(255,255,255,0.25);
+/* AKTUELLER MENÜPUNKT */
+.kolibri-nav a:active {
+    background: white;
+    color: #c000a8;
 }
-
-.kolibri-menu a:hover::after {
-    width: 65%;
-}
-
-/* kleines "Flattern" beim Hover */
-.kolibri-menu a:hover {
-    animation: flattern 0.5s ease;
-}
-
-@keyframes flattern {
-    0%   { transform: translateY(0) rotate(0); }
-    30%  { transform: translateY(-5px) rotate(-2deg); }
-    60%  { transform: translateY(2px) rotate(2deg); }
-    100% { transform: translateY(-4px) rotate(-1deg); }
-}
-
-/* Für kleinere Bildschirme */
-@media (max-width: 850px) {
-    .kolibri-menu {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .kolibri-menu .logo {
-        width: 100%;
-        text-align: center;
-        margin: 0;
-    }

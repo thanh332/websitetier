@@ -38,6 +38,12 @@ nav {
 }
 
 /* MENÜPUNKTE */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -47,30 +53,49 @@ nav a {
     font-weight: bold;
 
     padding: 10px 20px;
-
     border-radius: 9px;
 
     transition: 0.3s;
+
+    position: relative;
+}
+
+/* EMOJIS */
+nav a::before {
+    position: absolute;
+    left: 50%;
+    top: -45px;
+
+    font-size: 32px;
+
+    opacity: 0;
+    transform: translateX(-50%) scale(0);
+
+    transition: 0.3s;
+}
+
+/* Emoji für jeden Menüpunkt */
+nav a:nth-child(1)::before {
+    content: "🏠";
+}
+
+nav a:nth-child(2)::before {
+    content: "📋";
+}
+
+nav a:nth-child(3)::before {
+    content: "🐦";
+}
+
+/* AUFPOP-EFFEKT */
+nav a.aktiv::before {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.4);
 }
 
 /* MOUSE-OVER */
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.25);
-
     transform: translateY(-3px);
-
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-}
-
-/* FOOTER */
-footer {
-    color: rgb(14, 255, 90);
-    background-color: #9382f2;
-}
-
-/* CONTAINER */
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 16px;
 }

@@ -165,6 +165,12 @@ p {
 
 .card{
     border: 1px solid #19afef;
-    border-radius: 20px;
+    border-radius: 17px;
     padding: 12px;
+}
+
+@media (min-width: 700px){
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
 }

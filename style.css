@@ -47,9 +47,10 @@ nav {
     gap: 8px;
 
     background: linear-gradient(90deg,
-            #5b18e8,
-            #c516c9,
-            #f05bc5);
+            #2cff56,
+            #19afef,
+            hwb(288 0% 0% / 0.961));
+
 
     border-radius: 25px;
 

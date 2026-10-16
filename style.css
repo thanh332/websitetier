@@ -166,4 +166,5 @@ p {
 .card{
     border: 1px solid #19afef;
     border-radius: 20px;
+    padding: 12px;
 }

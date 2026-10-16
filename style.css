@@ -156,3 +156,14 @@ h3 {
 p {
     margin: 0;
 }
+
+.cards{
+    display: grid;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.card{
+    border: 1px solid #19afef;
+    border-radius: 20px;
+}

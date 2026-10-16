@@ -119,34 +119,40 @@ nav a:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
 }
- .site-header{ 
+
+.site-header {
     padding: 16px 0;
     border-bottom: 1px solid #359aff;
- }
- .site-nav{
-    border-bottom: 1px solid #e9ecef;
- }
-  .site-main{
-    padding: 24px 0;
-  }
+}
 
-  .site-footer{
+.site-nav {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.site-main {
+    padding: 24px 0;
+}
+
+.site-footer {
     padding: 16px 0;
     border-top: 1px solid #e9ecef;
 }
 
-.section{
+.section {
     padding: 18px 0;
 }
 
-.brand{
+.brand {
     font-weight: 700;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     line-height: 1.2;
     margin: 0 0 8px 0;
 }
-p{
+
+p {
     margin: 0;
 }

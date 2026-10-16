@@ -25,8 +25,8 @@ body {
 
 /* HEADER */
 header {
-    color: #80ed90;
-    background-color: hwb(238 36% 4%);
+    color: rgb (230, 14, 198);
+    background-color: #ffd4f4(238 36% 4%);
 }
 
 footer {
@@ -121,7 +121,7 @@ nav a:hover {
 }
  .site-header{ 
     padding: 16px 0;
-    border-bottom: 1px solid #e9ecef;
+    border-bottom: 1px solid #359aff;
  }
  .site-nav{
     border-bottom: 1px solid #e9ecef;

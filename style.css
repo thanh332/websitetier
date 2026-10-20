@@ -172,7 +172,7 @@ p {
 
  .hero-card{
     border: 1px solid #19afef;
-    border-radius: 17px;
+    border-radius: 75px;
     padding: 12px;
     background: #f7b6eb;
  }
@@ -193,4 +193,5 @@ p {
     max-width: 100%;
     height: auto;
     display: block;
+    border-radius: 2000px;
 }

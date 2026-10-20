@@ -139,7 +139,9 @@ nav a:hover {
 }
 
 .section {
-    padding: 18px 0;
+    border: 12 solid;
+    padding: 12px 0;
+    margin-bottom: 12px;
 }
 
 .brand {
@@ -185,4 +187,10 @@ p {
     .cards{
         grid-template-columns: repeat(2,1fr);
     }
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }

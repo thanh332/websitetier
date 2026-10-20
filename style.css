@@ -159,33 +159,34 @@ p {
     margin: 0;
 }
 
-.cards{
+.cards {
     display: grid;
     gap: 12px;
     margin-top: 12px;
 }
- .hero{
+
+.hero {
     display: grid;
     gap: 12px;
     margin-top: 12px;
- }
+}
 
- .hero-card{
+.hero-card {
     border: 1px solid #19afef;
     border-radius: 75px;
     padding: 12px;
     background: #f7b6eb;
- }
+}
 
-.card{
+.card {
     border: 2px solid #19afef;
     border-radius: 17px;
     padding: 12px;
 }
 
-@media (min-width: 700px){
-    .cards{
-        grid-template-columns: repeat(2,1fr);
+@media (min-width: 700px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

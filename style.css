@@ -329,14 +329,7 @@ p {
     0% {
         left: -100px;
         transform: translateY(0) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-100px) rotate(20deg);
-    }
-    100% {
-        left: 110%;
-        transform: translateY(30px) rotate(-20deg);
-    }
+    
 }
 
 .rivalen-text {

@@ -219,3 +219,141 @@ p {
         grid-template-columns: 1fr;
     }
 }
+#kolibri-easteregg {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+#kolibri-titel {
+    cursor: pointer;
+}
+
+.flug-tier {
+    position: absolute;
+    left: -80px;
+    font-size: 35px;
+    animation: kolibri-schwarm 4s linear forwards;
+}
+
+@keyframes kolibri-schwarm {
+    0% {
+        transform: translate(0, 0) rotate(-10deg) scale(0.7);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(50vw, -100px) rotate(10deg) scale(1.2);
+    }
+
+    100% {
+        transform: translate(110vw, 100px) rotate(-10deg) scale(0.8);
+        opacity: 0;
+    }
+}
+
+    50% {
+        transform: translateY(-60px) rotate(10deg);
+    }
+
+    100% {
+        left: 110%;
+        transform: translateY(20px);
+    }
+}
+
+#kolibri-titel {
+    cursor: pointer;
+}
+#kamera-blitz {
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+#kamera-blitz:hover {
+    transform: scale(1.2) rotate(-10deg);
+}
+
+#blitz-effekt {
+    position: fixed;
+    inset: 0;
+    background: white;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 99999;
+}
+
+#blitz-effekt.blitzen {
+    animation: kameraBlitz 0.5s ease-out;
+}
+
+@keyframes kameraBlitz {
+    0% { opacity: 0; }
+    15% { opacity: 1; }
+    40% { opacity: 0.9; }
+    100% { opacity: 0; }
+}
+#rivalen-titel {
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+#rivalen-titel:hover {
+    transform: scale(1.08);
+    color: #e600a9;
+}
+
+#rivalen-show {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 99999;
+}
+
+.rivale {
+    position: absolute;
+    font-size: 55px;
+    animation: rivalenRennen 3s ease-in-out forwards;
+}
+
+@keyframes rivalenRennen {
+    0% {
+        left: -100px;
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-100px) rotate(20deg);
+    }
+    100% {
+        left: 110%;
+        transform: translateY(30px) rotate(-20deg);
+    }
+}
+
+.rivalen-text {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    color: #a00080;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    animation: textAuf 3s forwards;
+}
+
+@keyframes textAuf {
+    0%, 80% { opacity: 1; }
+    100% { opacity: 0; }
+}

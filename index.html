@@ -28,9 +28,14 @@
             <section id="Home"></section class="section">
             <div class="hero">
                 <div class="hero-text">
-                    <h1>🐦KOLIBRI - Der bunte Sprössling🌸</h1>
-                    <p>Alles was du über Kolibris Wissen musst.</p>
-                </div>
+                    <h1 id="kolibri-titel">
+    🐦 Kleines Gefieder, grosses Talent. 🌟
+</h1>
+
+<div id="kolibri-easteregg"></div>
+    
+
+                
             </div>
             <div class="hero-card">
                 <img src="./images/kolibri1.jpg" class="responsive-img">
@@ -62,7 +67,8 @@
                         Rotrücken-Kolibri, der Annakolibri und die Breitschwanzelfe.</p>
                 </div>
                 <div class="card">
-                    <h2>⚔️🐦Ihre grössten Rivalen!🐦⚔️</h2>
+                    <h2 id="rivalen-titel">⚔️ Grösste Rivalen 🐦</h2>
+<div id="rivalen-show"></div>
                     <p>Die grössten Feinde der Kolibris sind unter anderem Vögel, Schlangen und Echsen.</p>
                     <img src="./images/schlange.jpg" class="responsive-img">
                 </div>
@@ -95,7 +101,12 @@
             <section id="Bilder" class="section">
     <div class="container">
         <div class="card">
-            <h1>📸 Bilder der Kolibris 🐦</h1>
+            <h1>
+    <span id="kamera-blitz">📸</span>
+    Bilder der Kolibris 🐦
+</h1>
+
+<div id="blitz-effekt"></div>
 
             <div class="bilder-raster">
                 <img src="./images/3kolibri.jpg" class="responsive-img">
@@ -121,3 +132,78 @@
 </body>
 
 </html>
+<script>
+const titel = document.getElementById("kolibri-titel");
+const feld = document.getElementById("kolibri-easteregg");
+
+titel.addEventListener("click", function() {
+
+    const symbole = ["🐦", "🐦", "✨", "⭐", "🌟", "💫", "🐦", "✨"];
+
+    for (let i = 0; i < 35; i++) {
+
+        const tier = document.createElement("span");
+
+        tier.className = "flug-tier";
+
+        tier.textContent = symbole[
+            Math.floor(Math.random() * symbole.length)
+        ];
+
+        tier.style.top = Math.random() * 90 + "vh";
+        tier.style.animationDelay = Math.random() * 1.5 + "s";
+        tier.style.fontSize = (20 + Math.random() * 35) + "px";
+
+        feld.appendChild(tier);
+
+        tier.addEventListener("animationend", function() {
+            tier.remove();
+        });
+    }
+
+});
+</script>
+<script>
+const kamera = document.getElementById("kamera-blitz");
+const blitz = document.getElementById("blitz-effekt");
+
+kamera.addEventListener("click", function() {
+    blitz.classList.remove("blitzen");
+
+    void blitz.offsetWidth;
+
+    blitz.classList.add("blitzen");
+});
+</script>
+<script>
+const rivalenTitel = document.getElementById("rivalen-titel");
+const rivalenShow = document.getElementById("rivalen-show");
+
+rivalenTitel.addEventListener("click", function() {
+
+    const spruch = document.createElement("div");
+    spruch.className = "rivalen-text";
+    spruch.textContent = "ACHTUNG! Die Rivalen kommen! 🐦⚔️";
+    rivalenShow.appendChild(spruch);
+
+    const rivalen = ["🐝", "🦋", "🐦", "🦅", "🐝", "🦋"];
+
+    rivalen.forEach(function(symbol, index) {
+        const tier = document.createElement("span");
+        tier.className = "rivale";
+        tier.textContent = symbol;
+        tier.style.top = (25 + index * 10) + "%";
+        tier.style.animationDelay = (index * 0.25) + "s";
+
+        rivalenShow.appendChild(tier);
+
+        tier.addEventListener("animationend", function() {
+            tier.remove();
+        });
+    });
+
+    setTimeout(function() {
+        spruch.remove();
+    }, 3000);
+});
+</script>
